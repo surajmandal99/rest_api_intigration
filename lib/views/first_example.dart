@@ -4,14 +4,14 @@ import 'package:flutter/material.dart';
 import 'package:rest_api_intigration/models/photo_model.dart';
 import 'package:http/http.dart' as http;
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+class FirstExample extends StatefulWidget {
+  const FirstExample({super.key});
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  State<FirstExample> createState() => _FirstExampleState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _FirstExampleState extends State<FirstExample> {
   List<PhotoModel> postList = [];
   Future<List<PhotoModel>> getPhotos() async {
     final response = await http
